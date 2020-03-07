@@ -1,0 +1,59 @@
+/* An example of nesting */
+nav {
+    header & {
+        background-color: $sassGreen;
+    }
+    .activePage {
+        background-color: $linksEtc;
+    }
+    .branding {
+        display: none;
+
+        @include breakArg(6100px, 960px) {
+            float: right;
+            display: block;
+        }
+        @include break(960px) {
+            display: block;
+            float: left;
+        }
+        h1 {
+            font-size: 2rem;
+            overflow: hidden;
+            margin: 0;
+            color: $sassColor;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+        @include clearFix;
+        li {
+            @include break(500px) {
+                float: left;
+            }
+            @include break(960px) {
+                float: right;
+            }
+            
+            padding: 5px 2px;
+
+            a {
+                text-decoration: none;
+                padding: 5px 2px;
+                color: $bgColor;
+                &:hover {
+                    color: $sassColor;
+                }
+                /* Example of Color Modification */
+                header &:hover {
+                    background-color: darken($sassGreen, 20%);
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="website for beginning users of Sass, brief overview and explanation and examples of features, setup description Sass, code editor and compiler">
+    <meta name="keywords" content="FEWD, sdce, Sass, CSS precompiler, mixins, variables, Sass CSS compiler">
+    <meta name="author" content="Andy Burke">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy's Project</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="page2">
+                <div class="branding">
+                    <h1>FEWD2 - Sass</h1>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="activePage"><a href="#">Features</a></li>
+                    <li><a href="page2.html">More</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Features of Sass</h1>
+        <h2>With Exciting Examples!</h2>
+        <div>
+        <section class="features">
+            <article class="variable">
+                <h3>Variable</h3>
+                <p>A variable is a storage container for a CSS value, such as a color or number. The syntax is written as $variable ('$'' indicates the item is a variable and 'variable' is the name you assign). You can use this code throughout the stylesheet after you have defined it.</p>
+                <p>For those who are color palette challenged, you can go to a website and find great ideas.  I used <a href="https://coolors.co/">Coolors</a> to generate the colors for this website.</p>
+                <img src="../images/colorPalette.png" alt="color palette">
+                
+                <p>You can generate a .scss file and copy the values into your .scss file.  The file generator creates hex values, RGB and HSL.  As you may have noticed, the file assumes you are using the colors as variables!</p>
+                
+                <img src="../images/colorPaletteScss.png" alt=".scss file of color palette">
+
+
+            </article>
+            <article class="nesting">
+                <h3>Nesting</h3> 
+                <p>Nesting reduces repetition in code and makes writing CSS faster and easier.  It also allows for a natural organization of styles.</p>
+                <p>A quick example of this is the footer below.  In traditional CSS two rules would apply, the first would be to the footer element and the second would be to the text.  e.g. footer { rules } footer p { rules }.  In nesting, the rule for the footer p would sit inside the footer rules.  The pictures below show each.</p>
+                <img src="../images/nestingSass.png" alt="Nesting in Sass">
+            </article>
+            <article class="partials">
+                <h3>Partials</h3> 
+                <p>Partials are SCSS files that begin with an underscore (_partial.scss) and are not compiled into their own CSS files, but are rather imported into a main file.  Partials allow you a way to work independently on a module and later seemlessly integrate your work into the main CSS file.  This website is built entirely from partials.  The main style.scss only has imports of partials.</p>
+            </article>
+            <article class="import">
+                <h3>Import</h3>
+                <p>Use @import to compile all your partials into one file.  The primary scss file will use the @import and reference the _partial.scss file.  During compilation, the instructions in the partial will be compiled as well.</p>
+            </article>
+            <article class="mixins">
+                <h3>Mixins</h3>
+                <p>Use @mixin for repetitious CSS, such as when vendor prefixes are required.  Mixins are used in this website for the main page background formatting, media break formulas, the fixed grid formulas and the formula for clearing after floats.</p>
+            </article>
+            <article class="extend">
+                <h3>Extend</h3>
+                <p>Use @extend to change a few key aspects of otherwise identical elements - such as a group of buttons with different colors.  There is an example at the bottom of this page.  Three sets of three buttons were made with three different methods.  One of these was an @extend method.</p>
+            </article>
+            <article class="operators">
+                <h3>Operators</h3>
+                <p>Operators allow you to use math calculations in your CSS - such as defining the width of various parts of a layout.  Operators were used in formula calulculations for the fixed grid example and the media break for example, as well as others.</p>
+            </article>
+        </section>
+    </div>
+        <section>
+            <div class="extendButtons">
+                <h1>@Extend Buttons</h1>
+                <button class="btn1">Button 1</button>
+                <button class="btn2">Button 2</button>
+                <button class="btn3">Button 3</button>
+            </div>
+        </section>
+        <section>
+            <div class="eachButtons">
+                <h1>Each Buttons</h1>
+                <button class="btn1">Button 1</button>
+                <button class="btn2">Button 2</button>
+                <button class="btn3">Button 3</button>
+            </div>
+        </section>
+        <section>
+            <div class="mapButtons">
+                <h1>Map Buttons</h1>
+                <button class="btn1">Button 1</button>
+                <button class="btn2">Button 2</button>
+                <button class="btn3">Button 3</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;Copyright - 2020 FEWD Grunt</p>
+        </footer>
+
+</body>
+</html>

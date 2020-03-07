@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="website for beginning users of Sass, brief overview and explanation and examples of features, setup description Sass, code editor and compiler">
+    <meta name="keywords" content="FEWD, sdce, Sass, CSS precompiler, mixins, variables, Sass CSS compiler">
+    <meta name="author" content="Andy Burke">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy's Project</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="page2">
+                <div class="branding">
+                    <h1>FEWD2 - Sass</h1>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="page1.html">Features</a></li>
+                    <li class="activePage"><a href="#">More</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <section class="forLoop">
+        <h1>@for looping</h1>
+        <h2>example</h2>
+        <h3>to set colors</h3>
+        <h4>from a list</h4>
+        <h5>to headings</h5>
+        <h6>1 through 6</h6>
+    </section>
+    <!-- math operators to create grid with user defined columns and gaps -->
+    <section>
+        <h2>Creating a Fixed Grid</h2>
+        <div class="grid">
+            <div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div>
+            <div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div><div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div><div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div><div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div><div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div><div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div><div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div><div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div><div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div><div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div><div class="item">
+                <img src="http://placehold.it/300x300" alt="thumbnail">
+            </div>
+        </div>
+    </section>
+    <section id="tables">
+        <div class="container">
+            <h1>Altering Colors</h1>
+            <table class="table">
+                <caption>Here is a caption</caption>
+                <thead>
+                    <tr>
+                        <th scope="column">Name</th>
+                        <th scope="column">Age</th>
+                        <th scope="column">State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Arnold</th>
+                        <td>22</td>
+                        <td>CA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Betsy</th>
+                        <td>27</td>
+                        <td>WY</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Carol</th>
+                        <td>12</td>
+                        <td>WI</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">David</th>
+                        <td>47</td>
+                        <td>NY</td>
+                    </tr>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <td>foot</td>
+                        <td>foot</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+    <section id="media">
+        <div class="container"> 
+            <h1>Features</h1>
+            <ol class="media">
+                <li class="item">
+                    <a href="#">
+                        <img src="../images/smallBlock1.jpg" alt="small colored block">
+                        <h2 class="head">Variables</h2>
+                        <p>Here are variables.  </p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <img src="../images/smallBlock2.jpg" alt="small colored block">
+                        <h2 class="head">Variables</h2>
+                        <p>This section of the page talks about variables.  </p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <img src="../images/smallBlock3.jpg" alt="small colored block">
+                        <h2 class="head">Variables</h2>
+                        <p>Here are variables.  This section of the page talks about variables.  At least long enough to wrap far enough to see if the float will work differently with lots of text.</p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <img src="../images/smallBlock1.jpg" alt="small colored block">
+                        <h2 class="head">Variables</h2>
+                        <p>Here are variables.  This section of the page talks about variables.  At least long enough to wrap far enough to see if the float will work differently with lots of text.</p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <img src="../images/smallBlock2.jpg" alt="small colored block">
+                        <h2 class="head">Variables</h2>
+                        <p>Here are variables. </p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <img src="../images/smallBlock3.jpg" alt="small colored block">
+                        <h2 class="head">Variables</h2>
+                        <p>Here are variables.  This section of the page talks about variables.  At least long enough to wrap far enough to see if the float will work differently with lots of text.</p>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <h1>My Project Requirements</h1>
+
+    <p>
+        <form class="reqs">
+        <input type="checkbox" id="req1" name="req1" value="req1">
+        <label for="req1">  A responsive website should include a grid system (flex and/or grid), media queries, and images that resize.</label><br><br>
+        <input type="checkbox" id="req2" name="req2" value="req2">
+        <label for="req2"> All code should be custom coded.</label><br><br>
+        <input type="checkbox" id="req3" name="req3" value="req3">
+        <label for="req3"> The grid system can have as many or as few columns as you require.</label><br><br>
+        <input type="checkbox" id="req4" name="req4" value="req4">
+        <label for="req4">  You should include at least two media queries in your CSS. You may have more than this if you require it.</label><br><br>
+        <input type="checkbox" id="req5" name="req5" value="req5">
+        <label for="req5"> The images need to resize in a responsive way, keep in mind file size when optimizing your images and deciding which ones you should use for large and small screens. </label><br><br>
+        <input type="checkbox" id="req6" name="req6" value="req6">
+        <label for="req6"> The site should include a navigation bar that links the relevant pages together, and it should be available on all pages of the site. Your navigation should be responsive.</label><br><br>
+
+        <input type="checkbox" id="req7" name="req7" value="req7">
+        <label for="req7">  If you need images for your site, you can find many free image websites online. I like http://www.freeimages.com/) but there are many others. Remember that only .jpg, .png, and .gif images work on the web, and remember that you should resize your images to optimize download time. </label><br><br>
+        <input type="checkbox" id="req8" name="req8" value="req8">
+        <label for="req8"> You will need to upload your project to GitHub and submit your repo address for me to access so I can grade your project. </label><br><br>
+        <input type="checkbox" id="req9" name="req9" value="req9">
+        <label for="req9"> When compiling your Sass, make sure the output is expanded, not nested, compact, or compressed.</label><br><br>      
+        <input type="checkbox" id="req10" name="req10" value="req10">
+        <label for="req10">  Make good use of variables, mixins, extend, nesting, math, built-in functions, etc.</label><br><br>
+        <input type="checkbox" id="req11" name="req11" value="req11">
+        <label for="req11"> Use comments to identify the various necessary components in your sass files. Include one necessary comment, and at least one hidden comment (you may want to use multiples of either of these). </label><br><br>
+        <input type="checkbox" id="req12" name="req12" value="req12">
+        <label for="req12"> Utilize a math operator. Comment the section where you use a math operator.</label><br><br>
+
+        <input type="checkbox" id="req13" name="req13" value="req13">
+        <label for="req13">  Modify colors using a SASS color function. Get creative and try to do something that is not possible with straight CSS. Comment the section where colors are modified.</label><br><br>
+        <input type="checkbox" id="req14" name="req14" value="req14">
+        <label for="req14"> Use variables whenever values are repeated. Comment the section where variables are stored. </label><br><br>
+        <input type="checkbox" id="req15" name="req15" value="req15">
+        <label for="req15"> Use one of the list properties to modify and customize your code. Comment out where this code is being used.</label><br><br>
+
+        <input type="checkbox" id="req16" name="req16" value="req16">
+        <label for="req16">  Incorporate a map into your code, show that you understand how to use this in your code. Create a comment that shows where this code is found. </label><br><br>
+        <input type="checkbox" id="req17" name="req17" value="req17">
+        <label for="req17"> Review the sass documentation under 'flow content (Links to an external site.)', add an @for, @each or @while command (pick one that is most appropriate for your website). </label><br><br>
+        <input type="checkbox" id="req18" name="req18" value="req18">
+        <label for="req18"> Create at least 1 custom-coded mixin. Comment the section where mixins are stored.</label><br><br>      
+        <input type="checkbox" id="req19" name="req19" value="req19">
+        <label for="req19">  Demonstrate proper use of extend in at least 1 instance. This can extend an existing style or an extend-only class. Place a comment where the extend exists.</label><br><br>
+        <input type="checkbox" id="req20" name="req20" value="req20">
+        <label for="req20"> Demonstrate nesting to 2 levels in at least one instance. Comment the area where nesting exists. </label><br><br>
+        <input type="checkbox" id="req21" name="req21" value="req21">
+        <label for="req21"> Incorporate at least 2 instances of built-in Sass functions. You may use functions covered in class or any of the functions listed at the Sass website: http://sass-lang.com/documentation/Sass/Script/Functions.html) Comment where you’ve used a Sass function.</label><br><br>
+        <input type="checkbox" id="req22" name="req22" value="req22">
+        <label for="req22"> Demonstrate the use of if/else in at least one instance. Comment your instance of if/else.</label><br><br>
+        <input type="checkbox" id="req23" name="req23" value="req23">
+        <label for="req23">  Use at least 2 partial files in managing your Sass.</label><br><br>
+        <input type="checkbox" id="req24" name="req24" value="req24">
+        <label for="req24"> Your SASS should be super dry and well-structured: making use of variables that link together to control the overall size of the document (i.e. hooking together a base font size with other font sizes, padding, margins, etc), interesting mixin choices that you code.</label><br><br>
+        <input type="checkbox" id="req25" name="req25" value="req25">
+        <label for="req25"> Create both unminified and minified versions of CSS.</label><br><br>
+        <input type="checkbox" id="req26" name="req26" value="req26">
+        <label for="req26">  You create a grid system that makes sense with your design. It doesn’t have to be complicated, messy, or long to do well. Simple is fine. Your Sass is DRY and well-formed.  You add comments next to the necessary items specified above. You can demonstrate that you understand how to use SASS and that you can take advantage of what it has to offer in regards to enhancing and simplifying your work. HTML and CSS validate (always).</label><br><br>
+        <input type="checkbox" id="req27" name="req27" value="req27">
+        <label for="req27">  Indicate which partial files and starting line numbers the following requirements are located on:
+            Variables section
+            Math Operator
+            Color modifier
+            List properties
+            Map
+            'Flow Content' item
+            Custom mixin
+            Extend
+            Nesting
+            Built-in Sass functions
+            If/else</label><br><br>
+
+
+        </form>
+
+    </main> 
+    <footer>
+        <p>&copy;Copyright - 2020 FEWD Grunt</p>
+    </footer>   
+</body>
+</html>

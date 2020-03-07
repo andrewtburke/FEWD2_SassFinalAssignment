@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Spartan:wght@200;400;700&display=swap');
+
+@import "variables";
+// @import "normalize"; ---- This was removed for ease of instructor review.
+@import "mixins";
+@import "base";
+@import "interface";
+
+@import "modules/backgrounds";
+@import "modules/navigation";
+@import "modules/media";
+@import "modules/tables";
+
+/* Comment Will Show in CSS and not minified CSS */
+/*! Comment Will Show in CSS AND minified CSS */
+// Comment Will not show in CSS nor in minified CSS
+
+
+
+

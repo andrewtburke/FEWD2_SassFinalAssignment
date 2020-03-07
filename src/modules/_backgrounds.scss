@@ -1,0 +1,25 @@
+.background {
+    margin: 0 10%;
+    width: 100%;
+    display: table;
+
+    .container {
+        display: table-cell;
+        vertical-align: bottom;
+        padding-bottom: 10%;
+    }
+
+    p {
+        padding: 0 5%;
+        margin-top: 0;
+    }
+}
+.whatIs {
+    @include backImage('../images/sassGlassesFade.jpg');
+}
+.someFeatures {
+    @include backImage('../images/logo-sassFade.jpg');
+}
+.using {
+    @include backImage('../images/sassGlassesFade.jpg');
+}

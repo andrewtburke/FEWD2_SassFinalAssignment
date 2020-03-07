@@ -1,0 +1,38 @@
+/* An example of nesting */
+.media {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    .item {
+        margin-bottom: 10px;
+        border-top: solid 1px $itemBorderColor;
+        padding: 5px;
+        &:hover {
+            background: $linksEtc;
+        }
+        &:last-of-type {
+            border-bottom: solid 1px $itemBorderColor;
+        }
+        @include clearFix;
+    }
+    .head {
+        margin: 0;
+        padding: 0;
+        color: $mediaHeadColor;
+        font-size: 2.25rem;
+    }
+    p {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    img {
+        float: left;
+        margin-right: 5px;
+        max-width: 75px;
+    }
+    a {
+        text-decoration: none;
+        color: $bodyColor;
+    }
+    
+}

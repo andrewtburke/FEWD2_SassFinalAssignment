@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Spartan:wght@200;400;700&display=swap");
+/* Color Variables */
+/* List Variables */
+/* Font Variables */
+/* Repetitive Process applies background image on main page */
+/* Clear float function */
+/* Mixin used in Fixed Grid Example - Uses Operators / Calculation */
+/* media query mixin example */
+/* argument + media query mixin example */
+/* Use of Sass function - if function */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+  color: #326273;
+  font-size: 1.5rem;
+  font-family: 'Spartan', sans-serif; }
+
+main {
+  width: 80%;
+  margin: 0 auto; }
+  main section.flexMe {
+    margin-bottom: 100px; }
+  @media (min-width: 750px) {
+    main div.flex {
+      display: flex; }
+    main section.flexMe {
+      width: 90%;
+      margin: 10px;
+      flex: 1; } }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5c9ead;
+  font-family: 'Merienda One', cursive; }
+
+/* for loop to set colors for h1-h6 */
+.forLoop h1 {
+  color: #5c9ead; }
+
+.forLoop h2 {
+  color: #ad6b5c; }
+
+.forLoop h3 {
+  color: #734332; }
+
+.forLoop h4 {
+  color: #e39774; }
+
+.forLoop h5 {
+  color: #cf649a; }
+
+.forLoop h6 {
+  color: #669999; }
+
+.forLoop h6 {
+  padding-bottom: 20px; }
+
+a {
+  color: #e39774; }
+
+img {
+  border: 5px solid #5c9ead;
+  padding: 1%;
+  width: 100%;
+  height: auto; }
+
+section.features img {
+  width: 100%;
+  height: auto;
+  max-width: 400px; }
+
+footer {
+  background-color: #5c9ead;
+  color: #eeeeee;
+  font-size: 60%;
+  padding: 1px 0;
+  margin: 0 auto; }
+  footer p {
+    text-align: center; }
+
+/* %button instead of .button is called shadow class - class of button exists in css but not in html */
+.eachButtons .btn1, .eachButtons .btn2, .eachButtons .btn3, .extendButtons .btn1, .extendButtons .btn2, .extendButtons .btn3, .mapButtons .btn1, .mapButtons .btn2, .mapButtons .btn3 {
+  display: inline-block;
+  padding: 2px 4px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-family: "Spartan", sans-serif;
+  user-select: none;
+  color: #eeeeee; }
+
+/* using @each function to get rid of .btn1 thru .btn3 below */
+.eachButtons .btn1 {
+  background-color: #5c9ead; }
+
+.eachButtons .btn2 {
+  background-color: #e39774; }
+
+.eachButtons .btn3 {
+  background-color: #cf649a; }
+
+/* Use of Extend */
+.extendButtons .btn1 {
+  background-color: #5c9ead; }
+
+.extendButtons .btn2 {
+  background-color: #e39774; }
+
+.extendButtons .btn3 {
+  background-color: #cf649a; }
+
+/* Use of Map Function */
+.mapButtons .btn1 {
+  background-color: #5c9ead; }
+
+.mapButtons .btn2 {
+  background-color: #e39774; }
+
+.mapButtons .btn3 {
+  background-color: #cf649a; }
+
+/* Construction of User Defined Grid with Fixed Columns and Variable Gutter */
+.grid:before, .grid:after {
+  content: '';
+  display: table; }
+
+.grid:after {
+  clear: both; }
+
+.grid .item {
+  float: left;
+  width: 19.2%; }
+  .grid .item:nth-child(n) {
+    margin-bottom: 1%;
+    margin-right: 1%; }
+  .grid .item:nth-child(5n) {
+    margin-bottom: 0;
+    margin-right: 0; }
+
+.grid img {
+  margin: 0;
+  display: block;
+  /* List property used here - example of picking an item out of a list of items */
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+  border: none; }
+
+.background {
+  margin: 0 10%;
+  width: 100%;
+  display: table; }
+  .background .container {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 10%; }
+  .background p {
+    padding: 0 5%;
+    margin-top: 0; }
+
+.whatIs {
+  background: url("../images/sassGlassesFade.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.someFeatures {
+  background: url("../images/logo-sassFade.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.using {
+  background: url("../images/sassGlassesFade.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+/* An example of nesting */
+header nav {
+  background-color: #669999; }
+
+nav .activePage {
+  background-color: #e39774; }
+
+nav .branding {
+  display: none; }
+  @media (min-width: 6100px) and (max-width: 960px) {
+    nav .branding {
+      float: right;
+      display: block; } }
+  @media (min-width: 960px) {
+    nav .branding {
+      display: block;
+      float: left; } }
+  nav .branding h1 {
+    font-size: 2rem;
+    overflow: hidden;
+    margin: 0;
+    color: #cf649a; }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem; }
+  nav ul:before, nav ul:after {
+    content: '';
+    display: table; }
+  nav ul:after {
+    clear: both; }
+  nav ul li {
+    padding: 5px 2px; }
+    @media (min-width: 500px) {
+      nav ul li {
+        float: left; } }
+    @media (min-width: 960px) {
+      nav ul li {
+        float: right; } }
+    nav ul li a {
+      text-decoration: none;
+      padding: 5px 2px;
+      color: #eeeeee;
+      /* Example of Color Modification */ }
+      nav ul li a:hover {
+        color: #cf649a; }
+      header nav ul li a:hover {
+        background-color: #3d5c5c; }
+
+/* An example of nesting */
+.media {
+  margin: 0;
+  padding: 0 10px;
+  list-style-type: none; }
+  .media .item {
+    margin-bottom: 10px;
+    border-top: solid 1px #e39774;
+    padding: 5px; }
+    .media .item:hover {
+      background: #e39774; }
+    .media .item:last-of-type {
+      border-bottom: solid 1px #e39774; }
+    .media .item:before, .media .item:after {
+      content: '';
+      display: table; }
+    .media .item:after {
+      clear: both; }
+  .media .head {
+    margin: 0;
+    padding: 0;
+    color: #5c9ead;
+    font-size: 2.25rem; }
+  .media p {
+    margin: 0;
+    font-size: 1.5rem; }
+  .media img {
+    float: left;
+    margin-right: 5px;
+    max-width: 75px; }
+  .media a {
+    text-decoration: none;
+    color: #326273; }
+
+.table {
+  border-collapse: collapse;
+  font-size: 1.25rem;
+  text-align: left;
+  width: 100%;
+  /* example of additional color modifications */ }
+  .table caption {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 2px; }
+  .table > thead > tr:nth-child(even), .table > tbody > tr:nth-child(even), .table > tfoot > tr:nth-child(even) {
+    background-color: rgba(102, 153, 153, 0.6); }
+    .table > thead > tr:nth-child(even):hover, .table > tbody > tr:nth-child(even):hover, .table > tfoot > tr:nth-child(even):hover {
+      background-color: #669999; }
+  .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    padding: 5px;
+    border-bottom: 1px dotted #cf649a; }
+  .table > thead, .table > tr {
+    background-color: rgba(168, 124, 124, 0.1); }
+    .table > thead:hover, .table > tr:hover {
+      background-color: #64cf99; }
+    .table > thead > th, .table > tr > th {
+      border-bottom: 0; }
+
+/* Comment Will Show in CSS and not minified CSS */
+/*! Comment Will Show in CSS AND minified CSS */

@@ -1,0 +1,74 @@
+$roundness: 20px 0 20px 0;
+/* %button instead of .button is called shadow class - class of button exists in css but not in html */
+%button {
+    display: inline-block;
+    padding: 2px 4px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-family: $textFont;
+    user-select: none;
+    color: $bgColor;
+    }
+/* using @each function to get rid of .btn1 thru .btn3 below */
+$colorBtnNames: '1','2','3';
+$colorBtnValues: $btn1Color, $btn2Color, $btn3Color;
+.eachButtons {
+    @each $name in $colorBtnNames {
+        $i: index($colorBtnNames, $name);
+        .btn#{$name} {
+        @extend %button;
+        background-color: nth($colorBtnValues, $i);
+        }
+    }
+}
+/* Use of Extend */
+.extendButtons {
+    .btn1 {
+        @extend %button;
+        background-color: $btn1Color;
+    }
+    .btn2 {
+        @extend %button;
+        background-color: $btn2Color;
+    }
+    .btn3 {
+        @extend %button;
+        background-color: $btn3Color;
+    }
+}
+
+/* Use of Map Function */
+.mapButtons {
+    $colorBtnMap: (
+        1: $btn1Color,
+        2: $btn2Color,
+        3: $btn3Color
+    );
+    @each $name, $value in $colorBtnMap {
+        .btn#{$name} {
+        @extend %button;
+        background-color: $value;
+        }
+    }
+}
+/* Construction of User Defined Grid with Fixed Columns and Variable Gutter */
+.grid {
+    @include clearFix;
+    .item {
+        float: left;
+        @include imageGrid(5, 1%);
+    }
+    img {
+        margin: 0;
+        display: block;
+        /* List property used here - example of picking an item out of a list of items */
+        border-radius: nth($roundness, 1);
+        max-width: 100%;
+        height: auto;
+        border: none;
+    }
+}

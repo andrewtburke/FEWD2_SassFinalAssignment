@@ -1,0 +1,32 @@
+//font-family: 'Spartan', sans-serif;
+//font-family: 'Merienda One', cursive;
+
+//( color pallet generator coolors.co
+// Coolors Exported Palette - coolors.co/5c9ead-ffffff-326273-eeeeee-e39774 */
+
+// RGB
+/* Color Variables */
+
+$headerColor: rgba(92, 158, 173, 1);
+$extraColor: rgba(168, 124, 124, .1);
+$bodyColor: rgba(50, 98, 115, 1);
+$bgColor: rgba(238, 238, 238, 1);
+$linksEtc: rgba(227, 151, 116, 1);
+$sassColor: #cf649a;
+$sassGreen: #669999;
+$headerColorComp: complement($headerColor);
+$bodyColorComp: complement($bodyColor);
+$bgColorComp: complement($bgColor);
+$btn1Color: $headerColor;
+$btn2Color: $linksEtc;
+$itemBorderColor:$linksEtc;
+$btn3Color: $sassColor;
+$colorEvenCells: transparentize($sassGreen, .4);
+$mediaHeadColor:$headerColor;
+
+/* List Variables */
+$headingColorList: $headerColor, $headerColorComp, $bodyColorComp, $linksEtc, $sassColor, $sassGreen;
+
+/* Font Variables */
+$headFont: 'Merienda One', cursive;
+$textFont: 'Spartan', sans-serif;
